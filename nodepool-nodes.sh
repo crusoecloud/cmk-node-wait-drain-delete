@@ -1,10 +1,8 @@
 #!/bin/bash
 
-set -euo pipefail
-
 if [ $# -ne 1 ]; then
   echo "Usage: $0 <nodepool-name>" >&2
-  echo "Example: $0 inc460" >&2
+  echo "Example: $0 my-h200-nodepool" >&2
   exit 1
 fi
 
