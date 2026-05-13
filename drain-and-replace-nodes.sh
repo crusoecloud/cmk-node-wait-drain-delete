@@ -27,7 +27,6 @@ get_pod_count() {
 cordon_wait_drain_delete_node() {
   local node=$1
   local vm=$(echo "$node" | sed 's/\..*//')
-  echo "Got $node and $vm"
   
   kubectl cordon $node
 
