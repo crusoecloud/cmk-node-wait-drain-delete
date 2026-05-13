@@ -1,5 +1,5 @@
 # cmk-node-wait-drain-delete
-For each node in a list of CMK nodepool nodes, wait until targeted workload pods have finished, drain non-workload pods, then delete the node such that a fresh node is created in its place. drain-and-replace-nodes.sh drains and deletes nodes listed in mynodes.txt ** in parallel ** to save time.
+For each node in a list of CMK nodepool nodes, wait until targeted workload pods have finished, drain non-workload pods, then delete the node such that a fresh node is created in its place. drain-and-replace-nodes.sh drains and deletes nodes listed in mynodes.txt **in parallel** to save time.
 
 ## Usage
 1. Ensure you have kubectl installed with its context set to your target cluster
